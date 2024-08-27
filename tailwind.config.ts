@@ -23,6 +23,7 @@ const config = {
         basecolor: '#264FAD',
         textcolor: '#737373',
         graycolor: '#CFCFCF',
+        headertext: '#565656',
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
