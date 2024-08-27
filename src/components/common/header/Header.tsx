@@ -27,42 +27,42 @@ const Header = () => {
           </Link>
           <div className="grid gap-2 py-6">
             <Link
-              href="#"
+              href="/"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
               Home
             </Link>
             <Link
-              href="#"
+              href="/teams"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
               Teams
             </Link>
             <Link
-              href="#"
+              href="success"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
               Success Stories
             </Link>
             <Link
-              href="#"
+              href="/about"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
               About Us
             </Link>
             <Link
-              href="#"
+              href="/blogs"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
               Blogs
             </Link>
             <Link
-              href="#"
+              href="/get-involved"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
@@ -90,7 +90,7 @@ const Header = () => {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              href="#"
+              href="/teams"
               className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-headertext font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 "
               prefetch={false}
             >
@@ -99,7 +99,7 @@ const Header = () => {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              href="#"
+              href="/success"
               className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-headertext font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 "
               prefetch={false}
             >
@@ -108,7 +108,7 @@ const Header = () => {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              href="#"
+              href="/about"
               className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-headertext font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 "
               prefetch={false}
             >
@@ -126,7 +126,7 @@ const Header = () => {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              href="#"
+              href="/get-involved"
               className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-headertext font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 "
               prefetch={false}
             >

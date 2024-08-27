@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const RelatedBlogsCard = () => {
   return (
-    <div className="w-4/12 shadow-md">
+    <div className="md:w-4/12 shadow-md">
       <img src="/assets/related.jpeg" alt="" className="w-full" />
       <div className="p-4">
         <h2 className="text-2xl  my-4 text-textcolor">

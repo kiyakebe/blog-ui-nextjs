@@ -16,7 +16,11 @@ const BlogBody = ({ id }: { id: string }) => {
   }
 
   if (!data) {
-    return <h1 className="text-center">Something went wrong</h1>;
+    return (
+      <div className="flex justify-center items-center h-5/6">
+        <Loader className="text-3xl" />
+      </div>
+    );
   }
 
   console.log(data);

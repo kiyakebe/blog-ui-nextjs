@@ -3,12 +3,17 @@ import { useGetBlogsQuery } from "@/lib/redux/api/blogsAPI";
 import BlogCard from "../blog-card/BlogCard";
 import BlogsHead from "../blogs-head/BlogsHead";
 import Link from "next/link";
+import { Loader } from "lucide-react";
 
 const BlogsList = () => {
   const { data, isLoading } = useGetBlogsQuery();
 
   if (isLoading) {
-    return <h1 className="text-center">Loading...</h1>;
+    return (
+      <div className="flex justify-center items-center h-5/6">
+        <Loader className="text-3xl" />
+      </div>
+    );
   }
 
   return (
