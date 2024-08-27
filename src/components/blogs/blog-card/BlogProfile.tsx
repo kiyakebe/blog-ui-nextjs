@@ -21,15 +21,17 @@ const BlogProfile = ({
 
   return (
     <div className="flex items-center gap-4">
-      <Avatar profilePicture={defaultAuthor.image} />
+      <Avatar profilePicture={author.image || defaultAuthor.image} />
       <div>
-        <div className="flex items-center space-y-3">
+        
+        <div className="flex items-center">
           <h3 className="font-bold">{author.name || defaultAuthor.name}</h3>
           <Dot className="text-textcolor" />
           <span className="text-sm text-textcolor">{formattedDate}</span>
         </div>
+
         <h2 className="uppercase font-semibold text-textcolor">
-          Software Engineer
+         {author.role || defaultAuthor.role}
         </h2>
       </div>
     </div>

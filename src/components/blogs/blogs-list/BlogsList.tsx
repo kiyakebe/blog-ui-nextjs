@@ -1,7 +1,8 @@
 "use client";
 import { useGetBlogsQuery } from "@/lib/redux/api/blogsAPI";
 import BlogCard from "../blog-card/BlogCard";
-import { defaultAuthor } from "@/data/authors";
+import BlogsHead from "../blogs-head/BlogsHead";
+import Link from "next/link";
 
 const BlogsList = () => {
   const { data, isLoading } = useGetBlogsQuery();
@@ -10,14 +11,19 @@ const BlogsList = () => {
     return <h1 className="text-center">Loading...</h1>;
   }
 
-  console.log(data);
-
   return (
-    <div className="px-3 md:px-32 lg:px-64 divide-solid divide-y-2 my-10">
-      {data?.map((blog) => {
-        return <BlogCard key={blog._id} {...blog} />;
-      })}
-    </div>
+    <>
+      <BlogsHead />
+      <div className="px-3 md:px-32 lg:px-64 divide-solid divide-y-2 my-10">
+        {data?.map((blog) => {
+          return (
+            <Link key={blog._id} href={`/blogs/${blog._id}`}>
+              <BlogCard key={blog._id} {...blog} />;
+            </Link>
+          );
+        })}
+      </div>
+    </>
   );
 };
 

@@ -5,5 +5,5 @@ export const defaultAuthor: Author = {
   name: "Kiya Kebe",
   email: "kiya.kebe@gmail.com",
   image: "/assets/profile.jpeg",
-  role: "user",
+  role: "User",
 };

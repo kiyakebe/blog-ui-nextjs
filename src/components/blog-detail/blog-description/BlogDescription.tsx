@@ -1,9 +1,8 @@
+import InnerHTML from 'dangerously-set-html-content'
 
-const BlogDescription = () => {
+const BlogDescription = ({ description }: {description: string}) => {
   return (
-    <div>
-        Blog Body
-    </div>
+    <InnerHTML html={description} className="mb-10" /> 
   )
 }
 
