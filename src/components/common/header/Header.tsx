@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="flex justify-center h-20 w-full shrink-0 items-center px-4 md:px-6">
+    <header className="flex justify-between h-20 w-full shrink-0 items-center px-4 md:px-6  py-4">
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="lg:hidden">
@@ -136,7 +136,7 @@ const Header = () => {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <div className="ml-auto flex gap-2">
+      <div className="flex gap-2">
         <Button className="font-bold bg-slate-50 text-black">Login</Button>
         <Button className="bg-basecolor text-white">Donate</Button>
       </div>
