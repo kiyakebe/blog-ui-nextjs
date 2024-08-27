@@ -7,8 +7,8 @@ import Teams from "./Teams";
 const Footer = () => {
   return (
     <>
-    <div className="space-y-6 md:space-y-2 md:flex justify-between space-x-4 px-3 md:px-16 lg:px-32">
-      <img src="assets/footer-img.png" alt="Footer Image" />
+    <div className="space-y-6 md:space-y-2 md:flex justify-between items-start space-x-4 px-3 md:px-16 lg:px-32">
+      <img src="assets/footer-img.png" alt="Footer Image" width={200} height={200} />
       <GetInvolved />
       <Links />
       <Teams />

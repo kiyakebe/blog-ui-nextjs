@@ -6,12 +6,20 @@ import Link from "next/link";
 import { Loader } from "lucide-react";
 
 const BlogsList = () => {
-  const { data, isLoading } = useGetBlogsQuery();
+  const { data, isLoading, isSuccess } = useGetBlogsQuery();
 
   if (isLoading) {
     return (
-      <div className="flex justify-center items-center h-5/6">
-        <Loader className="text-3xl" />
+      <div className="flex justify-center items-center h-[80vh]">
+        <Loader className="text-3xl animate-spin" />
+      </div>
+    );
+  }
+
+  if (!isSuccess) {
+    return (
+      <div className="flex justify-center items-center h-[80vh]">
+        <h1 className="text-3xl">Something went wrong!</h1>
       </div>
     );
   }

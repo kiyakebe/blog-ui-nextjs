@@ -7,18 +7,23 @@ import BlogDetailProfile from "../blog-detail-profile/BlogDetailProfile";
 import { defaultAuthor } from "@/data/authors";
 import BlogDescription from "../blog-description/BlogDescription";
 import RelatedBlogs from "../related-blogs/RelatedBlogs";
+import { Loader } from "lucide-react";
 
 const BlogBody = ({ id }: { id: string }) => {
-  const { data, isLoading } = useGetBlogsByIdQuery(id);
+  const { data, isLoading, isSuccess } = useGetBlogsByIdQuery(id);
 
   if (isLoading) {
-    return <h1 className="text-center">Loading...</h1>;
+    return (
+      <div className="flex justify-center items-centerh-[100vh]">
+        <Loader className="text-3xl" />
+      </div>
+    );
   }
 
-  if (!data) {
+  if (!isSuccess) {
     return (
-      <div className="flex justify-center items-center h-5/6">
-        <Loader className="text-3xl" />
+      <div className="flex justify-center items-center h-[90vh]">
+        <h1 className="text-3xl">Something went wrong!</h1>
       </div>
     );
   }
