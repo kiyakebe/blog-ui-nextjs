@@ -14,7 +14,7 @@ const BlogBody = ({ id }: { id: string }) => {
 
   if (isLoading) {
     return (
-      <div className="flex justify-center items-centerh-[100vh]">
+      <div className="flex justify-center items-center h-[80vh]">
         <Loader className="text-3xl" />
       </div>
     );
@@ -22,7 +22,7 @@ const BlogBody = ({ id }: { id: string }) => {
 
   if (!isSuccess) {
     return (
-      <div className="flex justify-center items-center h-[90vh]">
+      <div className="flex justify-center items-center h-[80vh]">
         <h1 className="text-3xl">Something went wrong!</h1>
       </div>
     );
