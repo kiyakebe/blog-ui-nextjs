@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+Deploy Link: <a href="https://kiya-blog.netlify.app/" target="_blank">https://kiya-blog.netlify.app/</a>
 
-#Deploy Link: https://kiya-blog.netlify.app/
+## Getting Started
 
 First, run the development server:
 
