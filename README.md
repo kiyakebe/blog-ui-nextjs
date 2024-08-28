@@ -1,38 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## A2SV Blog App
+
+The **A2SV Blog App** is a modern web application built using **Next.js**, **Redux Toolkit**, and **Tailwind CSS**. It provides a platform for users to browse and read blogs with a clean and responsive user interface.
+
+### Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/a2sv-blog-app.git
+   cd a2sv-blog-app
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Your app should now be running on [http://localhost:3000](http://localhost:3000).
+
+
+## Demo Screenshot
+
+1. Blogs List
+![App Screenshot](https://github.com/kiyakebe/blog-ui-nextjs/blob/main/public/demo/demo-1.png)
+
+2. Footer
+![App Screenshot](https://github.com/kiyakebe/blog-ui-nextjs/blob/main/public/demo/demo-2.png)
+
+3. Detail Page
+![App Screenshot](https://github.com/kiyakebe/blog-ui-nextjs/blob/main/public/demo/demo-3.png)
+
 
 Deploy Link: <a href="https://kiya-blog.netlify.app/" target="_blank">https://kiya-blog.netlify.app/</a>
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
